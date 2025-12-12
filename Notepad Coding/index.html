@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>My First Website</title>
+<style>
+    body {
+        background-image: url("Images/sunset.jpg"); /* replace with your sunset image file */
+        background-size: cover;              /* make the image cover the whole page */
+        background-position: center;         /* center the image */
+        background-repeat: no-repeat;        /* prevent tiling */
+        font-family: Arial, sans-serif;
+        text-align: center;}
+    h1 {color: darkblue;}
+    p {color: darkgreen; font-size: 18px;}
+</style>
+</head>
+
+<body>
+	<h1 title="Buddy is dumb! Yay!">Hello, world! My name is Brandon! </h1>
+	<p id="message1">This is my very first webpage coded in Notepad.</p>
+	<p id="message2" style="color:red;">I’m learning how to code websites!</p>
+	<button onclick="sayHello1()">Click Me!</button>
+    		<script>
+    			function sayHello1() {alert("You clicked the button! Welcome to my website.");}
+    		</script>
+    	<button onclick="sayHello2()">Try This!</button>
+		<script>
+        		function sayHello2() {document.getElementById("message1").innerHTML = "The text has changed! 🎉";}
+    		</script>
+    	<button onclick="sayHello3()">Or Press This!</button>
+		<script>
+        		let toggled = false;
+        		function sayHello3() {if (toggled) {document.getElementById("message2").innerHTML = "This is my very first webpage coded in Notepad.";toggled = false;} else {document.getElementById("message2").innerHTML = "The text has changed! 🎉"; toggled = true;}}
+    		</script>
+    	<br>
+    	<a style="color:white;" href="https://www.youtube.com/watch?v=YRkgO02Uy5U" target="_blank">This is a link!</a>
+	<br>
+	<a style="color:white;" href="Videos/Isshin-Combos.mp4" target="_blank">This is a video of me playing Sekiro!</a>
+    	<br>
+    	<a title="A Beautiful Image!" style="color:white;" href="Images/PoorUga.jpg" target="_blank">Here's another link!</a>
+    	
+	<hr>
+    
+	<h2 style="color:black;background-color:powderblue;font-family:verdana;">What is this site about?</h2>
+    	<p style="color:black;background-color:powderblue;font-family:courier;">This site is the result of my learning HTML code. I'm so happy you're here, and I will continue to update this page as I learn more!</p>
+    	<p style="color:white;font-family:cursive;font-size:300%">This paragraph is in cursive! Yay!</p>
+    	<p style="color:white;font-family:fantasy;font-size:300%">This font is called fantasy! Yay!</p>
+    	<p style="color:white;font-family:fantasy;font-size:300%;text-align:right">I'm over here!</p>
+    	<p style="color:white;font-family:fantasy;font-size:300%;text-align:left">And I'm way back here!</p>
+    
+	<hr>
+    	<h1 style="text-decoration:underline;color:white">Here are some important features for the attribute "style":</h1>
+		<pre style="color:white;font-size:200%">
+Use the "style" attribute for styling HTML elements
+Use "background-color" for background color
+Use "color" for text colors
+Use "font-family" for text fonts
+Use "font-size" for text sizes
+Use "text-align" for text alignment
+		</pre>
+    	
+	<hr>
+	
+	<p style="color:white;font-size:200%;font-family:times">This paragraph will demonstrate different formatting techniques in HTML. First, you can make <b>bold</b> text with "b" or "strong" tags. You can also <mark>highlight</mark> test with "mark" and <i>italicize</i> with "i" or "em."
+		If you want to <del>markthrough</del> a word, use "del." Furthermore, "sup" and "sub" make <sup>superscripted</sup> and <sub>subscripted</sub> text, respectively. If you want to insert text, use "ins" and it should appear <ins>underlined</ins>, as such. You can also use "small" to make <small>small</small> text.
+	</p>
+
+	<hr>
+	
+	<p style="font-size:200%;color:white;text-decoration:underline">Here is a quote that I made up:</p>
+	<blockquote style="font-size:200%;color:white;text-align:left" cite="www.IMadeThisUpJustNow.com">Hey, I like chicken! It's much better than steak and is usually half the price. You just can't go wrong with it. Anyone that prefers steak over chicken is a stuck-up person who tries to flex their "wealth." But here's the thing... they do NOT have any money; they're flat broke! It's like people from the ghetto who buy those ugly Gucci belts and Dodge Challengers. They literally break the bank and spend every red cent they have on these "status symbols." I think I've said what needs to be said.
+	</blockquote>
+	<p style="font-size:200%;color:white">Moving on, I feel like a <q>blah blah.</q> Didn't hear me? I said a <q style="font-size:200%">blah blah</q><span style="font-size:200%">!</span></p>
+	<p style="color:white;font-size:200%">Furthermore, the <abbr title="Sons of the American Legion">SAL</abbr> recommends that <q>blah blahs</q> help out with community trash pick-ups in their neighborhoods! Yay!</p>
+	
+	<hr>
+	
+	<p style="color:white;font-size:200%">The HTML "address" element defines contact information (author/owner) of a document or article.</p>
+	<address style="color:white;font-size:200%">
+		Written by John Doe.<br>
+		Visit him at: Llama Land<br>
+		Example.com<br>
+		Box 564, Disneyland<br>
+		USA
+	</address>
+
+	<hr>
+
+	<p style="color:white;font-size:200%">The Bi-direction override (BDO) tag is used to override the current text direction:</p>
+	<bdo dir="rtl" style="color:white;font-size:200%">This line will be written from right to left.</bdo>
+	
+	<hr>
+	<hr>
+
+	<h1 style="color:white;font-size:200%;text-decoration:underline">Color Attributes<h1>
+	<p style="color:white">In HTML, a color can be specified by using a color name with "background-color:___":<p>
+	<p style="background-color:Tomato;">"Tomato"</p>
+    	<p style="background-color:Orange;">"Orange"</p>
+    	<p style="background-color:DodgerBlue;">"DodgerBlue"</p>
+    	<p style="background-color:MediumSeaGreen;">"MediumSeaGreen"</p>
+    	<p style="background-color:Gray;">"Gray"</p>
+    	<p style="background-color:SlateBlue;">"SlateBlue"</p>
+    	<p style="background-color:Violet;">"Violet"</p>
+    	<p style="background-color:LightGray;">"LightGray"</p>
+
+	<h1 style="color:white">Or, alternatively, you can use HEX, RGB, RGBA, HSL, or HSLA values:</h1>
+	<p style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</p>
+	<p style="background-color:#ff6347;">#ff6347</p>
+	<p style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</p>
+	<p style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5</p>
+	<p style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</p>
+	
+	<h1 style="color:white">These color attributes can change the background of the text ("background-color:___") and the color of the text ("color:___"). Furthermore, you can even add a colored border around text, as shown below:</h1>
+	<p style="color:white;border:2px solid Tomato">This text is in a "Tomato" box. Whoah!</p>
+	<p style="color:white;border:5px solid DodgerBlue">This text is in a "DodgerBlue" box. Whoah!</p>
+	<p style="color:white;border:10px solid Violet">This text is in a "Violet" box. Whoah!</p>
+	
+	<h1 style="color:white">HTML supports 140 color names. Here's a <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank" style="color:green">link</a> to a page with the names and their HEX values.</h1>
+
+	<hr>
+	<hr>
+
+	<h1 style="color:white;font-size:200%;text-decoration:underline">This section has links to my other HTML pages that utilize external CSS files. Enjoy!</h1>
+	<p style="color:white;font-size:200%">Click here to go to my external CSS <a href="CSS-Test-1.html"> test</a> page!</p>
+
+</body>
+</html>
